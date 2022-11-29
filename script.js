@@ -14,7 +14,9 @@ form.addEventListener("submit", (event) => {
   fetch('https://polinashneider.space/', {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Accept": "application/json",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer: EkaterinaGrishel"
     },
     body: JSON.stringify({
       name,
